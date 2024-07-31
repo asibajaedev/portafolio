@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.header-container {  
+  background-color: #2C3E50;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;  
+}
+
+.header-container header {
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  margin: auto;
+}
+
+.header-container header .logo a {
+  color: #D4AF37;
+  text-decoration: none;
+  font-family: 'Righteous', cursive;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.header-container header ul {
+  display: flex;
+  list-style: none;
+}
+
+.header-container header ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin: 0 15px;
+  transition: .5s;
+}
+
+.header-container header ul li a:hover {
+  background-color: #D4AF37;
+  color: #2C3E50;
+  border-radius: 5px;
+}
+
+.nav-responsive {
+  background-color: #D4AF37;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.home {  
+  background: linear-gradient(rgba(52,73,94,.5), rgba(52,73,94,.2)), url('assets/background.jpg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;  
+}
+
+.home .home-banner {
+  max-width: 1000px;
+  padding: 20px;
+  margin: auto;
+  background-color: #2C3E50;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.home .home-banner .profesional-perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .home-banner .profesional-perfil .perfil-text {
+  width: 75%;
+  margin: 0 2rem;
+}
+
+.home .home-banner h1 {
+  color: #D4AF37;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  font-family: 'Righteous', cursive;
+}
+
+.home .home-banner h2 {  
+  color: #fff;
+  font-size: 1.8rem;
+  font-family:  'Work Sans';  
+}
+
+.home .home-banner .social-networks {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.home .home-banner .social-networks a {
+  color: #fff;
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.home .home-banner .social-networks a:hover {
+  color: #D4AF37;
+}
+
+.home .home-banner .image-container {
+  width: 25%;  
+  margin: 0 5rem;    
+}
+
+.home .home-banner img {
+  width: 18rem;
+  height: 18rem;  
+  object-fit: cover;
+  border: 10px solid #D4AF37;
+  border-radius: 100%;
+}
