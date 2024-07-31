@@ -46,8 +46,9 @@ html {
   color: #fff;
   text-decoration: none;
   display: block;
-  margin: 0 15px;
+  margin: 0 10px;
   transition: .5s;
+  padding: .5rem;
 }
 
 .header-container header ul li a:hover {
@@ -104,13 +105,14 @@ html {
   color: #fff;
   font-size: 1.8rem;
   font-family:  'Work Sans';  
+  margin: 1rem 0;
 }
 
 .home .home-banner .social-networks {
   display: flex;
   justify-content: center;  
   align-items: center;
-  gap: 15px;
+  gap: 1.5rem;
   margin-top: 20px;
 }
 
