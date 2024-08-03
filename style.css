@@ -269,3 +269,103 @@ html {
   transform: translateX(99%);  
   z-index: -1;
 }
+
+/* SKILLS SECTION */
+.skills {
+  background-color: #1F2A3A;
+  padding: 50px 0;
+  height: 85vh;  
+}
+
+.skills .skills-container {
+  max-width: 1100px;
+  margin: auto;
+  align-content: center;
+}
+
+.skills .skills-container h2 {
+  text-align: center;  
+  font-family: 'Righteous', cursive;
+  color: #D4AF37;
+  font-size:  1.8rem;    
+}
+
+.skills .skills-container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+.skills-container .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.skills-container .column h3 {
+  font-size: 1.5rem;
+  color: #D4AF37;
+  align-content: center;
+}
+
+.skills-container .column .list-skills {  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(2rem, auto));
+  gap: 1.5rem;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.skills-container .column .skill {
+  width: 15rem;
+  height: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  color: #1f2a3a;  
+  position: relative;
+  font-family: 'Work Sans', sans-serif;  
+}
+
+.skills-container .column .tech {
+  background-color: #B39EB5;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 1rem;
+    background-color: #8B6F91;
+  };
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 1.5rem;
+    width: 2rem;
+    background: linear-gradient(to bottom left, #1f2a3a 50%, #8B6F91 50%);
+  };
+}
+
+.skills-container .column .soft {
+  background-color: #CFCFC4;
+  &::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 1rem;
+    background-color: #A9A9A4;
+  };
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 1.5rem;
+    width: 2rem;
+    background: linear-gradient(to bottom right, #1f2a3a 50%, #A9A9A4 50%);
+  };
+}
