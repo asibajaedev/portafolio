@@ -272,14 +272,16 @@ html {
 
 /* SKILLS SECTION */
 .skills {
+  background: linear-gradient(rgba(31,42,58,.9), rgba(31,42,58,.7)), url('assets/skills-background.jpg');
+  background-size: cover;
   background-color: #1F2A3A;
-  padding: 50px 0;
-  height: 85vh;  
+  padding: 30px 0;
+  height: 90vh;  
 }
 
 .skills .skills-container {
   max-width: 1100px;
-  margin: auto;
+  margin: 2rem auto;
   align-content: center;
 }
 
@@ -294,7 +296,21 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  margin-top: 2rem;
+  margin-top: 2rem;    
+  background-color: #C8A98D;  
+  padding: 1rem;
+  position: relative;
+  border: 1rem solid #503531;
+  border-radius: .5rem;
+  &::before {
+    content: '';
+    width: 2%;
+    height: 100%;
+    position: absolute;
+    left: 49.8%;
+    top: 0;
+    background: linear-gradient(to right, #C8A98D 0%, #A98D6F 50%, #A98D6F 50%, #A98D6F 50%, #C8A98D 100%);
+  }
 }
 
 .skills-container .column {
@@ -302,22 +318,24 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 50%;  
 }
 
 .skills-container .column h3 {
+  font-family: 'Righteous', cursive;
   font-size: 1.5rem;
-  color: #D4AF37;
-  align-content: center;
+  color: #1F2A3A;
+  font-weight: 300;
+  align-content: center;  
 }
 
-.skills-container .column .list-skills {  
+.skills-container .column .list-skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(2rem, auto));
   gap: 1.5rem;
   width: 100%;
-  padding: 1.5rem;
+  padding: 1.5rem;  
 }
 
 .skills-container .column .skill {
@@ -346,19 +364,19 @@ html {
     right: 0;
     height: 1.5rem;
     width: 2rem;
-    background: linear-gradient(to bottom left, #1f2a3a 50%, #8B6F91 50%);
+    background: linear-gradient(to bottom left, #C8A98D 50%, #8B6F91 50%);
   };
 }
 
 .skills-container .column .soft {
-  background-color: #CFCFC4;
+  background-color: #77DD77;
   &::before {
     content: '';
     position: absolute;
     right: 0;
     height: 100%;
     width: 1rem;
-    background-color: #A9A9A4;
+    background-color: #5CAE5C;
   };
   &::after {
     content: '';
@@ -366,6 +384,6 @@ html {
     left: 0;
     height: 1.5rem;
     width: 2rem;
-    background: linear-gradient(to bottom right, #1f2a3a 50%, #A9A9A4 50%);
+    background: linear-gradient(to bottom right, #C8A98D 50%, #5CAE5C 50%);
   };
 }
